@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agenda: a free, private to-do list and planner for Android</title>
+<meta name="description" content="Agenda is a free to-do list for Android: smart typing, voice and photo capture, projects as lists, boards, tables or calendars, time-blocking, reminders that ring, saved filters, a focus timer, streaks, widgets and encrypted backups. No adverts, no account, no internet.">
+<meta name="author" content="Jonathan Jackson">
+<link rel="canonical" href="https://customgpter.github.io/agenda/">
+<meta name="theme-color" content="#f7f5f1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c0c0f" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Agenda">
+<meta property="og:title" content="Agenda: a free, private to-do list and planner for Android">
+<meta property="og:description" content="Agenda is a free to-do list for Android: smart typing, voice and photo capture, projects as lists, boards, tables or calendars, time-blocking, reminders that ring, saved filters, a focus timer, streaks, widgets and encrypted backups. No adverts, no account, no internet.">
+<meta property="og:url" content="https://customgpter.github.io/agenda/">
+<meta property="og:image" content="https://customgpter.github.io/agenda/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Agenda&#x27;s Today screen: overdue first, the day&#x27;s goal ring and a plan-my-day prompt">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+<link rel="preload" href="./assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./assets/site.css?v=1">
+<link rel="stylesheet" href="./assets/house.css?v=1">
+<link rel="stylesheet" href="./assets/apps-list.css?v=1">
+<script src="./assets/apps-list.js?v=1" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Agenda","url":"https://customgpter.github.io/agenda/","description":"Agenda is a free to-do list for Android: smart typing, voice and photo capture, projects as lists, boards, tables or calendars, time-blocking, reminders that ring, saved filters, a focus timer, streaks, widgets and encrypted backups. No adverts, no account, no internet.","applicationCategory":"ProductivityApplication","operatingSystem":"Android 8 or later","softwareVersion":"1.0.0","downloadUrl":"https://github.com/CustomGPTer/agenda/releases/latest/download/Agenda.apk","releaseNotes":"https://customgpter.github.io/agenda/releases.html","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},"inLanguage":"en-GB","image":"https://customgpter.github.io/agenda/assets/og.png","featureList":["Smart typing","Speak a task or a list","Tasks from text or a photo","Widgets, tiles and shortcuts","Projects, sections and subtasks","Five ways to see a project","Saved filters","Rich notes and files","Calendars and time-blocking","Plan my day and evening review","Every kind of repeat","Reminders that ring"],"author":{"@type":"Person","name":"Jonathan Jackson"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Agenda really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. There is no paid version, no subscription, no trial and no adverts, and nothing in the app is locked."}},{"@type":"Question","name":"Is it on Google Play?","acceptedAnswer":{"@type":"Answer","text":"No. Agenda is a personal project and is downloaded from this site as an Android app file. It needs Android 8 or later, which covers almost every phone in use."}},{"@type":"Question","name":"Does it need the internet?","acceptedAnswer":{"@type":"Answer","text":"No. The app does not ask Android for internet access at all, so it cannot go online. Voice input uses your phone's on-device speech engine, and photos are read by a text reader built into the app."}},{"@type":"Question","name":"Where are my tasks kept?","acceptedAnswer":{"@type":"Answer","text":"Only on your phone, in an encrypted database whose key is held by the phone's secure hardware. Attached files are encrypted too. Agenda is left out of Google's cloud backups; use its own encrypted backups instead."}},{"@type":"Question","name":"Can I use it on two phones, or with other people?","acceptedAnswer":{"@type":"Answer","text":"There is no syncing, because nothing goes online. You can share a project by file or QR code, and move everything to a new phone with an encrypted backup."}},{"@type":"Question","name":"Can I bring my tasks from another app?","acceptedAnswer":{"@type":"Answer","text":"Agenda has no importer from other apps. Copy your list, open Tasks from text in Browse and paste it: Agenda picks out the tasks and reads dates, projects and labels in each line."}},{"@type":"Question","name":"Why might a reminder be late?","acceptedAnswer":{"@type":"Answer","text":"Some phones hold back alarms to save battery. On Android 12, allow exact reminders in Agenda's settings, and leave Agenda out of battery saving if your phone offers it."}},{"@type":"Question","name":"What if I forget my backup password?","acceptedAnswer":{"@type":"Answer","text":"It cannot be recovered, by anyone. Set a new one in Backup and export and make a fresh backup; older backups still need the old password."}},{"@type":"Question","name":"Who made it?","acceptedAnswer":{"@type":"Answer","text":"Agenda is made by Jonathan Jackson, an independent developer in the United Kingdom. It is not connected with Todoist, TickTick or any other app maker."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<a class="brand" href="./" aria-label="Agenda home"><svg viewBox="0 0 108 108" aria-hidden="true"><defs><linearGradient id="agi" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f46e5"/><stop offset=".55" stop-color="#7c4deb"/><stop offset="1" stop-color="#b15cf0"/></linearGradient></defs><rect width="108" height="108" rx="24" fill="url(#agi)"/><g transform="translate(54 56) scale(1.45) translate(-52 -56)"><rect x="34" y="33" width="42" height="42" rx="6" fill="#fff" fill-opacity=".3"/><rect x="28" y="38" width="44" height="42" rx="7" fill="#fff"/><circle cx="42" cy="51" r="6" fill="#5b4bdb"/><path d="M39.4 51.2l1.9 1.9 3.4-3.6" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="51.5" y="48.5" width="15" height="5" rx="2.5" fill="#5b4bdb"/><circle cx="42" cy="66" r="5" fill="none" stroke="#cfc8f7" stroke-width="2"/><rect x="51.5" y="63.5" width="11" height="5" rx="2.5" fill="#cfc8f7"/></g></svg><span>Agenda</span></a>
+<nav aria-label="Main"><ul><li><a href="./#features">Features</a></li><li><a href="./compare.html">Compare</a></li><li><a href="./releases.html">Releases</a></li><li><a class="more-apps" href="./more-apps.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6"/></svg>More apps</a></li></ul></nav>
+<a class="button small" href="https://github.com/CustomGPTer/agenda/releases/latest/download/Agenda.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download</a>
+</div>
+</header>
+<main id="main">
+<div class="hero">
+<div class="wrap hero-grid">
+<div class="hero-copy">
+<h1>Everything you need to do. Nothing you don&#x27;t.</h1>
+<p class="lede">Agenda is a to-do list that keeps up with you. Type or say a task and it understands the details, see your week as a calendar and block out your time, get reminders that really ring, and focus on one thing at a time.</p><p class="lede">It is free, with no adverts and nothing to unlock. There is no account, and the app cannot go online, so your plans stay on your phone.</p>
+
+<p class="get" id="download"><a class="button" href="https://github.com/CustomGPTer/agenda/releases/latest/download/Agenda.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download for Android</a><a class="aside" href="#install">How to install</a></p>
+<ul class="pills"><li>Version 1.0.0</li><li>Android 8 or later</li><li>31.0 MB</li></ul>
+<p class="facts">Free, with nothing to unlock. No adverts, no account with the developer, no tracking. <a href="compare.html">Compare</a> or read the <a href="releases.html">release notes</a>.</p>
+<p class="facts">Chrome may say the file might be harmful. It shows this for app files that do not come from Google Play. Choose Download anyway.</p>
+</div>
+<div class="hero-phone"><div class="phone"><img src="./assets/screens/today.png" alt="Today: overdue first, the day&#x27;s goal ring, a streak and a prompt to plan the day." width="393" height="852" fetchpriority="high"></div></div>
+</div>
+</div>
+
+<section class="promises" aria-label="In short">
+<div class="wrap"><ul><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>No subscription</b><span>Every feature is in the free app.</span></span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>No adverts</b><span>None in the app and none on this site.</span></span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>No internet</b><span>The app has no permission to go online.</span></span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>Encrypted</b><span>Tasks, notes and files are locked on the phone.</span></span></li></ul></div>
+</section>
+
+<section id="screens" aria-labelledby="screens-h">
+<div class="wrap">
+<h2 id="screens-h">A look inside</h2>
+<p class="intro">These are the real screens, drawn from the app&#x27;s own code with made-up tasks. Swipe or scroll sideways to see them all.</p>
+<div class="gallery" tabindex="0" role="region" aria-label="Screens from Agenda"><figure class="shot"><div class="phone"><img src="./assets/screens/today.png" alt="Today: overdue first, the day&#x27;s goal ring, a streak and a prompt to plan the day." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Today: overdue first, the day&#x27;s goal ring, a streak and a prompt to plan the day.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/quick-add.png" alt="Quick add picks out the date, time, project, label, priority and duration as you type." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Quick add picks out the date, time, project, label, priority and duration as you type.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/week.png" alt="Upcoming as a week calendar. Drag a task onto a time to block out your day." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Upcoming as a week calendar. Drag a task onto a time to block out your day.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/board.png" alt="Any project as a board, list, table, calendar or urgent-and-important matrix." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Any project as a board, list, table, calendar or urgent-and-important matrix.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/task.png" alt="A task with checklist notes, a deadline, reminders and the time you have focused on it." width="393" height="852" loading="eager" decoding="async"></div><figcaption>A task with checklist notes, a deadline, reminders and the time you have focused on it.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/focus.png" alt="The focus timer, with rounds and breaks, counting time towards the task." width="393" height="852" loading="eager" decoding="async"></div><figcaption>The focus timer, with rounds and breaks, counting time towards the task.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/progress.png" alt="Progress: your streak, daily and weekly goals, the last week and a 20-week heatmap." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Progress: your streak, daily and weekly goals, the last week and a 20-week heatmap.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/from-text.png" alt="Tasks from text: paste, photograph or say a list and Agenda picks out the tasks." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Tasks from text: paste, photograph or say a list and Agenda picks out the tasks.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/plan.png" alt="Plan my day: catch up on anything overdue, pick what matters, then time-block it." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Plan my day: catch up on anything overdue, pick what matters, then time-block it.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/backup.png" alt="Encrypted backups to a file or a folder you choose, and exports to PDF, CSV and more." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Encrypted backups to a file or a folder you choose, and exports to PDF, CSV and more.</figcaption></figure></div>
+</div>
+</section>
+
+<section id="how" aria-labelledby="how-h">
+<div class="wrap">
+<h2 id="how-h">How it works</h2>
+<p class="intro">Get things out of your head fast, decide what matters today, and then get on with it.</p>
+<ol class="steps"><li><h3>Capture anything</h3><p>Tap + and type it the way you would say it, hold + and speak, or paste or photograph a whole list.</p></li><li><h3>Plan the day</h3><p>Each morning, catch up on anything overdue, pick what matters, and drag tasks onto the day's timeline.</p></li><li><h3>Do it and tick it</h3><p>Reminders ring when it is time, the focus timer keeps you on one thing, and every tick moves your streak along.</p></li></ol>
+</div>
+</section>
+
+<section id="features" aria-labelledby="features-h">
+<div class="wrap">
+<h2 id="features-h">Everything is in, and all of it is free</h2>
+<p class="intro">Nothing below is held back for a paid tier, because there is no paid tier.</p>
+<div class="groups"><div class="group"><h3>Capture</h3><dl><div><dt>Smart typing</dt><dd>Type &ldquo;Call Sam tomorrow 3pm #Work @calls p1&rdquo; and Agenda picks out the date, time, project, label and priority as you type, plus repeats, deadlines, durations and reminders.</dd></div><div><dt>Speak a task or a list</dt><dd>Hold the + button and say it. Your phone's own on-device speech engine turns it into text, so nothing you say leaves the phone.</dd></div><div><dt>Tasks from text or a photo</dt><dd>Paste a list, share one from another app, or photograph a whiteboard or sticky note, and tick the tasks you want to add.</dd></div><div><dt>Widgets, tiles and shortcuts</dt><dd>A Today widget you can tick off, a Quick add bar, Quick Settings tiles for adding tasks and focusing, and launcher shortcuts.</dd></div></dl></div><div class="group"><h3>Organise</h3><dl><div><dt>Projects, sections and subtasks</dt><dd>As many projects as you like, with sections, subtasks, labels, colours, favourites and an archive.</dd></div><div><dt>Five ways to see a project</dt><dd>List, board, table, calendar or an urgent-and-important matrix, with drag and drop in every one.</dd></div><div><dt>Saved filters</dt><dd>Write views like &ldquo;today | overdue&rdquo; or &ldquo;p1 &amp; #Work&rdquo;, keep as many as you want, and pin any of them to the bottom bar.</dd></div><div><dt>Rich notes and files</dt><dd>Checklists, bold, headings and links in notes, plus photos, voice memos and documents on tasks, all encrypted.</dd></div></dl></div><div class="group"><h3>Plan</h3><dl><div><dt>Calendars and time-blocking</dt><dd>Month, week, three-day and day views. Drag a task onto a time to block it out, or into the all-day row.</dd></div><div><dt>Plan my day and evening review</dt><dd>Two minutes each morning to catch up and choose what matters, and a short wrap-up each evening.</dd></div><div><dt>Every kind of repeat</dt><dd>Every weekday, every second Friday, the last day of the month, every three days after you finish, and many more.</dd></div></dl></div><div class="group"><h3>Remember</h3><dl><div><dt>Reminders that ring</dt><dd>At a time, before a task is due, or when you arrive at or leave a place. Alarm-style reminders ring over the lock screen.</dd></div><div><dt>Nagging, if you want it</dt><dd>A reminder can repeat every few minutes until the task is done. Done, Snooze and Tomorrow work from the notification.</dd></div><div><dt>Morning and evening</dt><dd>A morning summary that opens Plan my day, and an evening one that opens the review.</dd></div></dl></div><div class="group"><h3>Get it done</h3><dl><div><dt>Focus timer</dt><dd>Work in focused blocks with short and long breaks. The time counts towards the task, and the countdown sits in your notifications.</dd></div><div><dt>Streaks and goals</dt><dd>Daily and weekly goals, streaks that skip your days off and holidays, a 20-week heatmap and your best days and hours.</dd></div><div><dt>Celebrations</dt><dd>Satisfying ticks, a ring that fills through the day and confetti when you clear it, with a setting to tone them down.</dd></div></dl></div><div class="group"><h3>Your data</h3><dl><div><dt>Encrypted backups</dt><dd>Save a password-locked backup anywhere, or let Agenda back up daily or weekly into a folder you choose. Restore on any phone.</dd></div><div><dt>Exports</dt><dd>A PDF to print or send, a spreadsheet, a checklist in plain text, a calendar file, or everything as JSON.</dd></div><div><dt>Share a project</dt><dd>Hand a project to someone as a small file or a QR code they scan with Agenda. No accounts or servers involved.</dd></div></dl></div></div>
+</div>
+</section>
+
+<section id="privacy" aria-labelledby="privacy-h">
+<div class="wrap">
+<h2 id="privacy-h">Your plans are your business</h2>
+<ul class="plain"><li><h3>No internet at all</h3><p>Agenda has no permission to go online. It cannot send your tasks anywhere.</p></li><li><h3>Encrypted on the phone</h3><p>Tasks, notes and attached files are encrypted with a key kept by the phone's secure hardware, and left out of cloud backups.</p></li><li><h3>Locked if you want</h3><p>A PIN or fingerprint lock, hidden from the recent apps screen, and widgets that hide task names while the lock is on.</p></li></ul>
+</div>
+</section>
+
+<section id="install" aria-labelledby="install-h">
+<div class="wrap">
+<h2 id="install-h">Installing and updating</h2>
+<p class="intro">Agenda is not on Google Play, so your phone asks a couple of extra questions the first time.</p>
+<ol class="steps"><li><h3>Download the app file</h3><p>Tap Download on your phone. The file is called Agenda.apk and is about 31.0 MB. If Chrome says the file might be harmful, choose Download anyway.</p></li><li><h3>Allow the install</h3><p>Open the file. The first time, Android asks you to allow your browser to install apps. Allow it, go back and tap Install. If Google Play Protect steps in, choose More details, then Install anyway.</p></li><li><h3>Updating later</h3><p>Agenda never goes online, so it cannot check for updates itself. Settings, About, Updates opens the release page: install the new file over the old one and all your tasks are kept.</p></li></ol>
+<p class="after-table">Version 1.0.0, released 23 November 2026. See the <a href="releases.html">release notes</a>, or <a href="releases.html#checking">check your download</a>.</p>
+</div>
+</section>
+
+<section id="questions" aria-labelledby="questions-h">
+<div class="wrap">
+<h2 id="questions-h">Questions</h2>
+<div class="faq"><details><summary>Is Agenda really free?</summary><p>Yes. There is no paid version, no subscription, no trial and no adverts, and nothing in the app is locked.</p></details><details><summary>Is it on Google Play?</summary><p>No. Agenda is a personal project and is downloaded from this site as an Android app file. It needs Android 8 or later, which covers almost every phone in use.</p></details><details><summary>Does it need the internet?</summary><p>No. The app does not ask Android for internet access at all, so it cannot go online. Voice input uses your phone's on-device speech engine, and photos are read by a text reader built into the app.</p></details><details><summary>Where are my tasks kept?</summary><p>Only on your phone, in an encrypted database whose key is held by the phone's secure hardware. Attached files are encrypted too. Agenda is left out of Google's cloud backups; use its own encrypted backups instead.</p></details><details><summary>Can I use it on two phones, or with other people?</summary><p>There is no syncing, because nothing goes online. You can share a project by file or QR code, and move everything to a new phone with an encrypted backup.</p></details><details><summary>Can I bring my tasks from another app?</summary><p>Agenda has no importer from other apps. Copy your list, open Tasks from text in Browse and paste it: Agenda picks out the tasks and reads dates, projects and labels in each line.</p></details><details><summary>Why might a reminder be late?</summary><p>Some phones hold back alarms to save battery. On Android 12, allow exact reminders in Agenda's settings, and leave Agenda out of battery saving if your phone offers it.</p></details><details><summary>What if I forget my backup password?</summary><p>It cannot be recovered, by anyone. Set a new one in Backup and export and make a fresh backup; older backups still need the old password.</p></details><details><summary>Who made it?</summary><p>Agenda is made by Jonathan Jackson, an independent developer in the United Kingdom. It is not connected with Todoist, TickTick or any other app maker.</p></details></div>
+</div>
+</section>
+
+<section class="closing" aria-labelledby="closing-h">
+<div class="wrap">
+<div><h2 id="closing-h">Everything you need to do</h2><p>Free, with no adverts and nothing to unlock. Made by the developer of several other free Android apps: <a href="more-apps.html">see them all</a>.</p></div>
+<a class="button" href="https://github.com/CustomGPTer/agenda/releases/latest/download/Agenda.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download for Android</a>
+</div>
+</section>
+</main>
+<footer class="colophon">
+<div class="wrap">
+<div>
+<a class="brand" href="./" aria-label="Agenda home"><svg viewBox="0 0 108 108" aria-hidden="true"><defs><linearGradient id="agi" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f46e5"/><stop offset=".55" stop-color="#7c4deb"/><stop offset="1" stop-color="#b15cf0"/></linearGradient></defs><rect width="108" height="108" rx="24" fill="url(#agi)"/><g transform="translate(54 56) scale(1.45) translate(-52 -56)"><rect x="34" y="33" width="42" height="42" rx="6" fill="#fff" fill-opacity=".3"/><rect x="28" y="38" width="44" height="42" rx="7" fill="#fff"/><circle cx="42" cy="51" r="6" fill="#5b4bdb"/><path d="M39.4 51.2l1.9 1.9 3.4-3.6" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="51.5" y="48.5" width="15" height="5" rx="2.5" fill="#5b4bdb"/><circle cx="42" cy="66" r="5" fill="none" stroke="#cfc8f7" stroke-width="2"/><rect x="51.5" y="63.5" width="11" height="5" rx="2.5" fill="#cfc8f7"/></g></svg><span>Agenda</span></a>
+<p>&copy; 2026 Jonathan Jackson. Agenda is an independent app.</p>
+<p>This site uses no cookies and no tracking.</p>
+<p>Set in Bricolage Grotesque and Atkinson Hyperlegible.</p>
+</div>
+<nav aria-label="The app"><h2>The app</h2><ul>
+<li><a href="./">Home</a></li>
+<li><a href="./compare.html">Compare</a></li>
+<li><a href="./releases.html">Release notes</a></li>
+
+</ul></nav>
+<nav aria-label="Legal"><h2>Legal</h2><ul>
+<li><a href="./privacy.html">Privacy policy</a></li>
+<li><a href="./terms.html">Terms of use</a></li>
+<li><a href="./licences.html">Licences</a></li>
+</ul></nav>
+<nav aria-label="More"><h2>More</h2><ul>
+<li><a href="./more-apps.html">More apps</a></li>
+<li><a href="https://customgpter.github.io/">All apps</a></li>
+<li><a href="https://github.com/CustomGPTer/agenda/issues">Contact</a></li>
+</ul></nav>
+</div>
+</footer>
+</body>
+</html>
