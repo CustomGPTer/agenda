@@ -1,15 +1,5 @@
-The first release of Agenda, a free, private to-do list and planner for Android.
+Agenda 1.0.1 ties the app into TorusApps.com.
 
-- Smart typing in Quick add, speaking a task or a list on the phone, and tasks picked out of pasted text or a photo
-- Projects with sections, subtasks, labels, priorities, deadlines, durations and every kind of repeat
-- List, board, table, calendar and urgent-and-important layouts, time-blocking and drag and drop
-- Reminders at a time, before a task or at a place, with alarm-style and nagging options
-- Saved filters, Plan my day and an evening review
-- Focus timer, streaks, daily and weekly goals and a Progress page
-- Rich notes with checklists, and encrypted photos, voice memos and files on tasks
-- Widgets, Quick Settings tiles, encrypted backups, exports and project sharing by file or QR code
-- No adverts, no account and no internet access
+- Settings > About: "Developed by Jonathan Jackson" under the version, then Website and Check for updates (torusapps.com/agenda/), More apps (torusapps.com), Privacy policy (torusapps.com/privacy/) and Email (hello@torusapps.com). The old GitHub updates link is gone. Agenda still has no internet permission.
 
-Needs Android 8 or later. Download `Agenda.apk` below and open it to install.
-
-Full notes: https://customgpter.github.io/agenda/releases.html
+Installs over the earlier version and keeps everything.
